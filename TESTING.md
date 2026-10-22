@@ -1,0 +1,7 @@
+# Testing and validation
+
+The verified source checks include JavaScript syntax, route-manifest JSON, local HTML asset references, additive database migration, health readiness, server-side protected redirects, user/admin login modes, default role assignment, wrong-dashboard denial, request reference generation, backend validation, request persistence, ownership isolation, user replies, administrator replies, internal-note privacy, CSRF protection, status synchronization, staff assignment and progress updates, role management, and administrator all-request visibility.
+
+The expanded live API suite completed with `LIVE_API_TESTS_PASSED=48`, including the server-side invitation gate for administrator registration, direct admin status changes reflected after user refetch, and database-backed opportunity add/delete synchronization. The detailed expected/actual results are in [`docs/TEST-REPORT.md`](docs/TEST-REPORT.md).
+
+The live QA run intentionally created uniquely prefixed test accounts and request records in the managed development database to verify persistence. No destructive cleanup was performed because the managed database is shared by development and published runtime. An authenticated Sandbox Preview pass also loaded both the Admin Dashboard and User Dashboard with live data, filters, role controls, and logout behavior. Current screenshot files remain outside the repository unless copied into the evidence folder.

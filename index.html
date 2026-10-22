@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#261307">
+  <title>Youth Opportunities Portal | Youth Career Opportunities</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brand-theme.css">
+</head>
+<body class="home-page">
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-logo"><a href="index.html" class="logo-text" aria-label="Youth Portal home">Youth<span>Portal</span><i aria-hidden="true">.</i></a></div>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="opportunities.html" class="nav-link">Explore Opportunities</a></li>
+          <li><a href="resources.html" class="nav-link">Career Resources</a></li>
+          <li><a href="dashboard.html" class="nav-link">Service requests</a></li>
+          <li><a href="contact.html" class="nav-link">Contact &amp; Report</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="profile.html" class="profile-nav-link" title="My Profile" aria-label="My Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Your next chapter starts here</p>
+          <h1 class="hero-title" id="hero-title">Find your<br><span>next move.</span></h1>
+          <p class="hero-intro">One thoughtful place to explore work, learnerships, internships, bursaries, and skills programmes built for your future.</p>
+          <div class="hero-tags" aria-label="Opportunity types"><span>Work</span><span>Learn</span><span>Grow</span></div>
+        </div>
+        <figure class="hero-visual">
+          <img src="assets/youth-career-collaboration.jpg" alt="Two young adults collaborating on a laptop" fetchpriority="high">
+          <figcaption><span class="visual-mark" aria-hidden="true">↗</span><span><strong>Big plans start small.</strong><br>Find a first step that fits you.</span></figcaption>
+        </figure>
+      </div>
+      <form id="home-search-form" action="opportunities.html" method="GET" class="search-form" role="search">
+        <div class="search-group search-keyword-group">
+          <label for="search-keyword">What are you looking for?</label>
+          <input type="search" id="search-keyword" name="search" placeholder="Role, skill, or organisation">
+        </div>
+        <div class="search-group">
+          <label for="search-category">Category</label>
+          <select id="search-category" name="category">
+            <option value="">All opportunities</option>
+            <option value="Jobs">Jobs</option>
+            <option value="Learnerships">Learnerships</option>
+            <option value="Internships">Internships</option>
+            <option value="Bursaries">Bursaries</option>
+            <option value="Courses &amp; Skills Programmes">Courses &amp; Skills Programmes</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <label for="search-location">Where?</label>
+          <input type="text" id="search-location" name="location" placeholder="City or remote">
+        </div>
+        <button type="submit" class="btn-primary search-submit"><span>Search opportunities</span><span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+
+    <section class="section-container category-section" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">A good place to begin</p><h2 id="categories-title">What’s your next move?</h2></div>
+        <a class="text-link" href="opportunities.html">See every opportunity <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="category-links">
+        <a class="category-link category-work" href="opportunities.html?category=Jobs"><span class="category-icon" aria-hidden="true">↗</span><span><strong>Jobs</strong><small>Find your first role</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-link category-learn" href="opportunities.html?category=Learnerships"><span class="category-icon" aria-hidden="true">✳</span><span><strong>Learnerships</strong><small>Learn while you work</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-link category-intern" href="opportunities.html?category=Internships"><span class="category-icon" aria-hidden="true">⌁</span><span><strong>Internships</strong><small>Build real experience</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-link category-fund" href="opportunities.html?category=Bursaries"><span class="category-icon" aria-hidden="true">✦</span><span><strong>Bursaries</strong><small>Make study possible</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-link category-skills" href="opportunities.html?category=Courses%20%26%20Skills%20Programmes"><span class="category-icon" aria-hidden="true">◎</span><span><strong>Courses &amp; skills</strong><small>Grow in a new direction</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section-container matcher-section" id="next-step-matcher" aria-labelledby="matcher-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">A better first step</p><h2 id="matcher-title">Find your next step</h2><p class="section-description">Choose what matters to you. This simple matcher runs in your browser and explains why a listing may fit.</p></div>
+      </div>
+      <form class="matcher-form" id="opportunity-match-form">
+        <div class="form-group"><label for="match-category">What kind of opportunity?</label><select id="match-category" class="filter-control"><option value="">Any type</option><option value="Jobs">Jobs</option><option value="Learnerships">Learnerships</option><option value="Internships">Internships</option><option value="Bursaries">Bursaries</option><option value="Courses &amp; Skills Programmes">Courses &amp; Skills Programmes</option></select></div>
+        <div class="form-group"><label for="match-location">Where?</label><input id="match-location" class="filter-control" type="text" maxlength="80" placeholder="City, province or South Africa"></div>
+        <div class="form-group"><label for="match-level">Your current stage</label><select id="match-level" class="filter-control"><option value="">Any stage</option><option value="No Experience Required">No experience yet</option><option value="Entry Level / Graduate">Entry level / graduate</option><option value="Students">Student</option></select></div>
+        <div class="form-group"><label for="match-interests">Interests or skills</label><input id="match-interests" class="filter-control" type="text" maxlength="160" placeholder="e.g. teaching, coding, finance"></div>
+        <div class="matcher-actions"><button type="submit" class="btn-primary">Show my matches <span aria-hidden="true">↗</span></button><button type="button" class="btn-secondary" id="use-profile-match">Use my profile</button></div>
+      </form>
+      <p id="matcher-feedback" class="matcher-feedback" role="status" aria-live="polite">Your preferences stay in this browser; they are not stored by this matcher.</p>
+      <div id="match-results" class="cards-grid match-results" hidden></div>
+    </section>
+
+    <section class="section-container opportunity-section" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Start with what’s open</p><h2 id="featured-title">Featured opportunities</h2><p class="section-description">Verified cards link to official sources. Sample cards are fictional examples, never live vacancies.</p></div>
+        <a class="text-link" href="opportunities.html">Explore all <span aria-hidden="true">↗</span></a>
+      </div>
+      <div id="featured-grid" class="cards-grid"></div>
+    </section>
+
+    <section class="deadline-section" aria-labelledby="deadlines-title">
+      <div class="section-container">
+        <div class="section-heading">
+          <div><p class="section-kicker">Keep an eye on the calendar</p><h2 id="deadlines-title">Coming up soon</h2><p class="section-description">The nearest closing dates among current verified and demonstration listings.</p></div>
+          <a class="text-link" href="opportunities.html">View all dates <span aria-hidden="true">↗</span></a>
+        </div>
+        <div id="deadlines-grid" class="cards-grid deadline-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-container personal-section tracker-section" id="application-tracker" aria-labelledby="application-tracker-title" hidden>
+      <div class="section-heading">
+        <div><p class="section-kicker">Your progress, your pace</p><h2 id="application-tracker-title">Application tracker <span class="tracker-count" id="application-tracker-count">0</span></h2><p class="section-description">Update each stage as you go. This tracker is saved only in this browser on this device.</p></div>
+        <a class="text-link" href="opportunities.html">Find another opportunity <span aria-hidden="true">↗</span></a>
+      </div>
+      <div id="application-tracker-list" class="application-tracker-list"></div>
+    </section>
+
+    <section class="section-container weekly-plan-section" aria-labelledby="weekly-plan-title">
+      <div class="weekly-plan-card">
+        <div class="weekly-plan-heading"><div><p class="section-kicker">Small steps add up</p><h2 id="weekly-plan-title">Your weekly action plan</h2><p>Four practical actions, checked off privately on this device. It refreshes each Monday.</p></div><div class="weekly-progress-wrap"><label id="weekly-plan-progress" for="weekly-plan-meter">0 of 4 actions done this week</label><progress id="weekly-plan-meter" max="4" value="0">0 of 4</progress></div></div>
+        <ul id="weekly-plan-list" class="weekly-plan-list"></ul>
+        <button type="button" class="btn-tertiary" id="weekly-plan-reset">Reset this week’s checks</button>
+      </div>
+    </section>
+
+    <section class="section-container personal-section" id="saved-section" aria-labelledby="saved-title" hidden>
+      <div class="section-heading">
+        <div><p class="section-kicker">Your shortlist</p><h2 id="saved-title">Saved opportunities</h2><p class="section-description">A handy place to come back to your favourites.</p></div>
+        <a class="text-link" href="opportunities.html?saved=1">Manage saved <span aria-hidden="true">↗</span></a>
+      </div>
+      <div id="saved-grid" class="cards-grid"></div>
+    </section>
+
+    <section class="section-container personal-section" id="recent-section" aria-labelledby="recent-title" hidden>
+      <div class="section-heading">
+        <div><p class="section-kicker">Pick up where you left off</p><h2 id="recent-title">Recently viewed</h2><p class="section-description">The sample listings you opened most recently.</p></div>
+      </div>
+      <div id="recent-grid" class="cards-grid"></div>
+    </section>
+
+    <section class="section-container resource-callout">
+      <div class="resource-callout-art" aria-hidden="true"><span>Make<br>it yours<span class="lime-dot">.</span></span><i>↗</i></div>
+      <div class="resource-callout-copy"><p class="section-kicker">Ready when you are</p><h2>Bring your best self.</h2><p>Get practical help with your CV, cover letter, interviews, and spotting scams.</p><a class="btn-primary" href="resources.html">Explore career resources <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><a href="index.html" class="logo-text">Youth<span>Portal</span><i aria-hidden="true">.</i></a><p>A starting point for South Africa’s next generation.</p></div>
+      <div class="footer-col"><h2>Explore</h2><ul><li><a href="opportunities.html">All opportunities</a></li><li><a href="resources.html">Career resources</a></li><li><a href="profile.html">My profile</a></li></ul></div>
+      <div class="footer-col"><h2>Get involved</h2><ul><li><a href="contact.html">Contact &amp; report</a></li><li><a href="opportunities.html?category=Jobs">Jobs</a></li><li><a href="opportunities.html?category=Bursaries">Bursaries</a></li></ul></div>
+      <div class="footer-note"><span class="footer-spark" aria-hidden="true">✳</span><h2>Stay curious.<br>Stay scam-safe.</h2><p>Never pay a fee to apply for a job or attend an interview.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Youth Portal</span><span>Built for the next step.</span></div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/features.js"></script>
+</body>
+</html>

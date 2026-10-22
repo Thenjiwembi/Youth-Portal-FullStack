@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#261307">
+  <title>Contact & Report | Youth Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brand-theme.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-logo">
+        <a href="index.html" class="logo-text">Youth<span>Portal</span></a>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="opportunities.html" class="nav-link">Explore Opportunities</a></li>
+          <li><a href="resources.html" class="nav-link">Career Resources</a></li>
+          <li><a href="dashboard.html" class="nav-link">Service requests</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact & Report</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="profile.html" class="profile-nav-link" title="My Profile" aria-label="My Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon" aria-hidden="true">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-wrapper">
+    <div class="form-card">
+      <h1 style="font-size: 1.8rem; color: var(--space-kadet); margin-bottom: 0.4rem;">Get in Touch or Report an Issue</h1>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">Help us keep Youth Portal accurate, scam-free, and up to date.</p>
+
+      <div id="success-message" class="alert-success" role="status" aria-live="polite">
+        Demo only: your form passed browser validation, but no message was sent to a server or moderation team.
+      </div>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" class="form-control" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-type">Inquiry Type</label>
+          <select id="contact-type" class="form-control" required>
+            <option value="general">General Inquiry</option>
+            <option value="report">Report Expired or Incorrect Listing</option>
+            <option value="scam">Report Suspected Employment Scam</option>
+            <option value="suggest">Suggest a New Opportunity</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message / Opportunity Details</label>
+          <textarea id="contact-message" class="form-control" rows="5" placeholder="Provide link, details, or feedback..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; font-size: 1rem; padding: 0.8rem;">Submit Message</button>
+      </form>
+    </div>
+  </main>
+  <!-- Shared Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 style="font-size: 1.2rem; font-weight: 700;">Youth<span style="color: var(--pink, #ec4899);">Portal</span></h4>
+        <p>Helping South African youth explore opportunities and career guidance.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="opportunities.html">Explore Opportunities</a></li>
+          <li><a href="resources.html">Career Resources</a></li>
+          <li><a href="contact.html">Contact & Report</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="opportunities.html?category=Learnerships">Learnerships</a></li>
+          <li><a href="opportunities.html?category=Internships">Internships</a></li>
+          <li><a href="opportunities.html?category=Bursaries">Bursaries</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Scam Alert & Safety</h4>
+        <p>Youth Portal is 100% free. Never pay anyone for job applications or interviews.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Youth Portal. Built for empowerment and accessible career development.</p>
+    </div>
+  </footer>
+  <script src="js/contact-page.js"></script>
+  <script src="js/features.js"></script>
+</body>
+</html>

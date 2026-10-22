@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#261307">
+  <title>Explore Opportunities | Youth Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brand-theme.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-logo">
+        <a href="index.html" class="logo-text">Youth<span>Portal</span></a>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="opportunities.html" class="nav-link active">Explore Opportunities</a></li>
+          <li><a href="resources.html" class="nav-link">Career Resources</a></li>
+          <li><a href="dashboard.html" class="nav-link">Service requests</a></li>
+          <li><a href="contact.html" class="nav-link">Contact & Report</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="profile.html" class="profile-nav-link" title="My Profile" aria-label="My Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon" aria-hidden="true">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="explore-container">
+    <aside class="filter-card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--space-kadet);">Filter Listings</h2>
+      
+      <div class="filter-group">
+        <label for="filter-keyword">Search Keyword</label>
+        <input type="text" id="filter-keyword" class="filter-control" placeholder="Role, skill, or company">
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-category">Category</label>
+        <select id="filter-category" class="filter-control">
+          <option value="">All Categories</option>
+          <option value="Jobs">Jobs</option>
+          <option value="Learnerships">Learnerships</option>
+          <option value="Internships">Internships</option>
+          <option value="Bursaries">Bursaries</option>
+          <option value="Courses &amp; Skills Programmes">Courses &amp; Skills Programmes</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-location">Location</label>
+        <input type="text" id="filter-location" class="filter-control" placeholder="Any location (e.g. Cape Town)" aria-label="Filter by location">
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-experience">Experience Level</label>
+        <select id="filter-experience" class="filter-control">
+          <option value="">All Levels</option>
+          <option value="No Experience Required">No Experience Required</option>
+          <option value="Entry Level / Graduate">Entry Level / Graduate</option>
+          <option value="Students">Students</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-listing-status">Source status</label>
+        <select id="filter-listing-status" class="filter-control">
+          <option value="all">Verified + sample</option>
+          <option value="verified">Verified only</option>
+          <option value="sample">Sample data only</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter-closing-date">Closing on or before</label>
+        <input type="date" id="filter-closing-date" class="filter-control">
+      </div>
+
+      <button id="saved-only-btn" class="btn-tertiary" type="button" aria-pressed="false">☆ Show saved <span class="saved-count" data-saved-count>0</span></button>
+      <button id="reset-filters" class="btn-secondary" style="width: 100%; text-align: center;">Reset Filters</button>
+    </aside>
+
+    <main>
+      <div class="results-header">
+        <h1 style="font-size: 1.5rem; color: var(--space-kadet);">Available Opportunities</h1>
+        <span id="results-count" style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">Showing 0 roles</span>
+      </div>
+      <p class="verification-notice" role="note"><strong>Know what you’re viewing:</strong> “Official source checked” means we checked the linked provider page on the date shown. These records disappear from discovery after seven days unless rechecked, or after closing. Sample cards are fictional examples—not real vacancies. Always confirm the terms and deadline with the provider before sharing personal information.</p>
+
+      <div id="opportunities-grid" class="cards-grid"></div>
+      <section class="official-source-directory" aria-labelledby="official-sources-title">
+        <p class="section-kicker">Keep exploring safely</p><h2 id="official-sources-title">Official opportunity sources</h2>
+        <p>These directories can help you find openings not listed here. A directory link is not proof that a specific opportunity is open.</p>
+        <div class="official-source-links">
+          <a href="https://www.gov.za/issues/government-and-opportunities-youth" target="_blank" rel="noopener noreferrer">Government youth opportunities ↗</a>
+          <a href="https://www.nyda.gov.za/Pages/default.aspx" target="_blank" rel="noopener noreferrer">National Youth Development Agency ↗</a>
+          <a href="https://studytrust.org.za/bursaries/" target="_blank" rel="noopener noreferrer">StudyTrust bursaries ↗</a>
+          <a href="https://www.funzalushaka.doe.gov.za/" target="_blank" rel="noopener noreferrer">Funza Lushaka official portal ↗</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <section class="email-alert-section" aria-labelledby="email-alert-heading">
+    <div class="email-alert-card">
+      <div><p class="section-kicker">A little heads-up</p><h2 id="email-alert-heading">Deadline alert mock-up</h2><p>Try the sign-up flow as a prototype. No email is saved or sent.</p></div>
+      <form id="email-alert-form" class="email-alert-form">
+        <label class="visually-hidden" for="email-alert-address">Email address</label>
+        <input id="email-alert-address" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn-primary" type="submit">Preview alerts</button>
+        <p id="email-alert-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <!-- Shared Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 style="font-size: 1.2rem; font-weight: 700;">Youth<span style="color: var(--pink, #ec4899);">Portal</span></h4>
+        <p>Helping South African youth explore opportunities and career guidance.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="opportunities.html">Explore Opportunities</a></li>
+          <li><a href="resources.html">Career Resources</a></li>
+          <li><a href="contact.html">Contact & Report</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="opportunities.html?category=Learnerships">Learnerships</a></li>
+          <li><a href="opportunities.html?category=Internships">Internships</a></li>
+          <li><a href="opportunities.html?category=Bursaries">Bursaries</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Scam Alert & Safety</h4>
+        <p>Youth Portal is 100% free. Never pay anyone for job applications or interviews.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Youth Portal. Built for empowerment and accessible career development.</p>
+    </div>
+  </footer>
+
+
+  <script src="js/data.js"></script>
+  <script src="js/opportunities-page.js"></script>
+  <script src="js/features.js"></script>
+</body>
+</html>

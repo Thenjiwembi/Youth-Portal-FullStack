@@ -1,0 +1,28 @@
+{
+  "name": "youth-portal-service-requests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Youth Portal service request management system",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "migrate": "node scripts/migrate.js",
+    "check": "node --check server.js && node --check scripts/migrate.js && node --check scripts/live-api-test.js && node --check scripts/auth-email-test.js && node --check js/auth.js && node --check js/api.js && node --check js/dashboard.js && node --check js/request-form.js && node --check js/request-detail.js",
+    "test:api": "node scripts/live-api-test.js",
+    "test:auth-email": "node scripts/auth-email-test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^18.0.8",
+    "express": "^4.21.2",
+    "nodemailer": "^10.1.7",
+    "pg": "^8.16.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "smtp-server": "^3.20.2"
+  }
+}
